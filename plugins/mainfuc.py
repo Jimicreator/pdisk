@@ -35,7 +35,7 @@ async def _human_time_duration(seconds):
 @Client.on_message(filters.private & filters.command(["start"]))
 async def start(client,message):
 	insert(int(message.chat.id))
-	await message.reply_text("Hello iam Pdisk Uploader Bot\nMade with love by @mrlokaman",reply_to_message_id = message.message_id,reply_markup=InlineKeyboardMarkup([ [ InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/lntechnical") ], [InlineKeyboardButton("Subscribe 🧐", url="https://youtube.com/c/LNtechnical") ]  ]  ) 
+	await message.reply_text("Hello iam Pdisk Uploader Bot\nMaintained by 💓@Jimi_Bots",reply_to_message_id = message.message_id,reply_markup=InlineKeyboardMarkup([ [ InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/Jimi_Bots") ], [InlineKeyboardButton("Also Join🧐", url="https://t.me/jimibots_grp") ]  ]  ) 
         )
 	
 @Client.on_message(filters.command("ping"))
@@ -102,7 +102,7 @@ async def upload(client,message):
 			res = pdisk_url(api_key,link,title,thumb)
 			try:
 				id = res['data']['item_id']
-				await message.reply_text(f'Title : {title}\n\nURL : ```https://cofilink.com/share-video?videoid={id}```\n\n**This File Will Be Uploading in  10 - 15 Minutes **',reply_to_message_id = message.message_id)
+				await message.reply_text(f'Title : {title}\n\nURL : ```https://cofilink.com/share-video?videoid={id}```\n\n**This File Will Be Uploading in  2 - 15 Minutes **',reply_to_message_id = message.message_id)
 			except:
 				e = res['msg']
 				await message.reply_text(f"Error: ```{e}```",reply_to_message_id = message.message_id)
@@ -110,7 +110,7 @@ async def upload(client,message):
 			res = pdisk_url(api_key,link,title)
 			try:
 				id = res['data']['item_id']
-				await message.reply_text(f'Title : {title}\nURL:```https://cofilink.com/share-video?videoid={id}```\n\n This File Will Be Uploading in  10 - 15 Minutes ',reply_to_message_id = message.message_id)
+				await message.reply_text(f'Title : {title}\nURL:```https://cofilink.com/share-video?videoid={id}```\n\n This File Will Be Uploading in  10 - 15 Minutes 😊 acc.to file size 🧐 ',reply_to_message_id = message.message_id)
 			except:
 				e = res['msg']
 				await message.reply_text(f"Error:```{e}```",reply_to_message_id = message.message_id)
